@@ -15,15 +15,19 @@
 </head>
 <body>
     <div id="root" >
-        <div class="container.fluid text-center">
+        <div class="text-center">
             <div class="mb-5 ">
                 <h1>Inserisci testo per visualizzarlo</h1>
                 <p>
                     {{ content }}
                 </p>
-                <input type="text" v-model="content">
+                <input type="text" v-model="content" placeholder="Enter some text">
             </div>
-
+            <div>
+                <h1>Inserisci l'url di una foto per visualizzarla</h1>
+                <img class="" :src="imgSource" alt="">
+                <input type="text" v-model="imgSource" placeholder="Enter some url">
+            </div>
         </div>
     </div>
 </body>
